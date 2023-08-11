@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100vw;
+    height:100vh;
+    z-index: -1;
+    object-fit: cover;
+}
+
+#container{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.644);
+    display: flex;
+    justify-content: center;
+}
+
+#content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    width: 50%;
+    height: 75%;
+}
+
+#logo{
+    height: 60%;
+    width:60%;
+}
+
+#memory{
+    font-family: memory;
+    color: rgb(233, 75, 75);
+    font-size: 2.5em;
+    background: linear-gradient(to right, rgb(255, 0, 0), rgb(233, 75, 75));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#play{
+    font-family: electro;
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    margin-top: 15%;
+    padding: 2.5vh 5vw;
+    background: linear-gradient(to right, rgb(255, 125, 0), rgb(255, 0, 0), rgb(255, 255, 0),rgb(255, 125, 0));
+    border-radius: 2.5em;
+    background-size: 600%;
+    border-style: none;
+    font-size: 1.4em;
+    color: white;
+    text-decoration: none;
+    transform: scale(1);
+    transition:transform 0.5s ease;
+}
+
+#play:hover{
+    animation: animate 6s linear infinite;
+    transition:transform .5s ease;
+    transform: scale(1.1);
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 600%;
+    }
+}
+
+@font-face {
+    font-family:memory;
+    src: url(Silent\ Phobia.otf);
+}
+
+@font-face {
+    font-family: electro;
+    src: url(batmfa__.ttf);
+}
