@@ -13,6 +13,19 @@
     object-fit: cover;
 }
 
+#sound{
+    transform: translateX(10%);
+}
+
+#soundOn{
+    position: absolute;
+    width: 50%;
+}
+
+#noSound {
+    width: 50%;
+}
+
 #container{
     position: fixed;
     height: 100%;
