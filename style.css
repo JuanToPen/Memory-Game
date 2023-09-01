@@ -14,21 +14,36 @@
 }
 
 #sound{
-    transform: translateX(10%);
+    margin-top: 5vh;
+    position: absolute;
+    width: 6%;
+    height: 30vh;
+    left:90%;
 }
 
 #soundOn{
+    display: none;
     position: absolute;
-    width: 50%;
+    width:100%;
 }
 
-#noSound {
-    width: 50%;
+#soundOn:hover{
+    cursor: pointer;
+}
+
+#soundOff {
+    transform: translateY(-10%);
+    position: absolute;
+    width:100%;
+}
+
+#soundOff:hover{
+    cursor: pointer;
 }
 
 #container{
-    position: fixed;
-    height: 100%;
+    position: relative;
+    height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.644);
     display: flex;
@@ -91,6 +106,7 @@
         background-position: 600%;
     }
 }
+
 
 @font-face {
     font-family:memory;
